@@ -1,7 +1,7 @@
 // WeatherCard.jsx
 // Presentationskomponent för väderkortet
 import React from "react";
-import "./App.css";
+import "../App.css";
 
 const WeatherCard = ({ city, date, temp, desc, min, max, footer }) => (
   <div className="weather-card">
