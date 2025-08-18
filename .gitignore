@@ -27,3 +27,4 @@ coverage/
 logs
 *.log
 
+* text=auto
