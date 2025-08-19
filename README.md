@@ -34,13 +34,37 @@ När sidan laddas visas automatiskt vädret för Malmö.
    npm run dev
    ```
 
-
 ## Struktur
 
 - `src/components/` – alla React-komponenter
 - `src/api.js` – funktion för att hämta väderdata
 - `src/utils/validation.js` – valideringsfunktioner för input
 - `src/App.jsx` – huvudkomponenten
+
+## Testning med Vitest
+
+Projektet använder [Vitest](https://vitest.dev/) för att testa React-komponenter och funktioner.
+
+### Installera testberoenden
+Testpaket är redan inkluderade i projektet. Om du behöver installera om:
+```
+npm install --save-dev vitest @testing-library/react
+```
+
+### Köra tester
+Kör alla tester med:
+```
+npx vitest
+```
+eller
+```
+npm test
+```
+
+### Teststruktur
+- Testfiler ligger i `src/` och slutar på `.test.jsx`.
+- Exempel: `src/App.test.jsx` och `src/Dummy.test.jsx`.
+- Testerna kontrollerar rendering, input och API-anrop.
 
 ## API
 
@@ -49,4 +73,4 @@ Du behöver en egen API-nyckel.
 
 ---
 
-Jag har byggt detta för att öva på React, API-integration och responsiv design.  
+Jag har byggt detta för att öva på React, API-integration och responsiv design.
