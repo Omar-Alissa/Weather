@@ -2,6 +2,9 @@
 body {
   margin: 0;
   font-family: 'Cairo', Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -114,21 +117,76 @@ body {
   align-self: flex-end;
 }
 
+/* Inputfält */
 
-@media (min-width: 600px) {
-  .weather-bg {
-    align-items: center;
-    justify-content: center;
+.search-form input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 140px;
+  
+}
+
+
+.search-form input[type="text"]:focus {
+  border-color: #1976d2;
+}
+
+/* Sökknapp */
+.search-form button {
+  padding: 8px 18px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-form button:hover,
+.search-form button:focus {
+  background: #1565c0;
+}
+
+/* Responsivitet för mobilskärmar */
+@media (max-width: 480px) {
+  .search-form input[type="text"] {
+    width: 90px;
+    font-size: 0.95rem;
+    
   }
+  .search-form button {
+    padding: 7px 12px;
+    margin: 8px;
+    font-size: 0.95rem;
+
+  }
+}
+
+/* iPad och tablets */
+@media (min-width: 481px) and (max-width: 900px) {
   .weather-card {
-    max-width: 420px;
-    padding: 32px 32px;
-    margin: 0 auto;
+    max-width: 600px;
+    padding: 32px 24px;
+    margin: 24px auto;
   }
   .weather-header {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .weather-temp {
-    font-size: 4.5rem;
+    font-size: 5rem;
+  }
+  .search-form input[type="text"] {
+    width: 180px;
+    font-size: 1.1rem;
+  }
+  .search-form button {
+    padding: 10px 24px;
+    font-size: 1.1rem;
   }
 }
