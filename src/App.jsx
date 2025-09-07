@@ -36,11 +36,12 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="app">
+      <h1 className="app-title">Weather App</h1>
       {/* Sökformulär för att välja stad */}
       <SearchForm onSearch={loadWeather} />
       {/* Visa felmeddelande om något gick fel */}
-      {error && <div style={{ color: "red" }}>{error}</div>}
+      {error && <div className="error-message">{error}</div>}
       {/* Visa väderkort om data finns */}
       {weather && <WeatherCard {...weather} />}
     </div>
