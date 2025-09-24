@@ -10,6 +10,7 @@ När sidan laddas visas automatiskt vädret för Malmö.
 - Responsiv design – fungerar bra på mobil, surfplatta och dator
 - Felhantering om staden inte hittas eller API-anrop misslyckas
 - API-nyckel hanteras säkert via `.env`-fil
+- **För läraren:** API-nyckeln : VITE_WEATHER_API_KEY=464beed25ba4e16d3e4e431c9aa8a20b
 
 ## Kom igång
 
